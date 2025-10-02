@@ -63,3 +63,607 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+// Custom
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+@mixin rounded-banner-button {
+  font-size: 18px;
+  background-color: $primary-color;
+  text-align: center;
+  color: $dark-gray;
+  @include border-rounded;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  li {
+    margin-bottom: 1.438rem;
+    font-size: 18px;
+    color: $dark-gray;
+    &:before {
+      content: url("/assets/images/check.svg");
+      position: relative;
+      top: 6px;
+      margin-right: 1rem;
+    }
+  }
+}
+
+hr {
+  border: 2px solid rgba(29, 60, 52, 1);
+  opacity: 0.1;
+  max-width: 544px;
+  margin: 2rem 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 88px;
+
+  @media screen and (max-width: 720px) {
+    padding: 1.5rem;
+  }
+}
+.header-banner-section {
+  text-align: center;
+  background-color: $primary-color;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0.28rem;
+}
+
+.header {
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  background-color: $white;
+  &__button {
+    @include border-rounded;
+    width: 201px;
+    padding: 0.813rem;
+    margin: 0;
+    font-size: 18px;
+    @media screen and (max-width: 414px) {
+      display: none;
+    }
+  }
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+.hero-section {
+  height: 757px;
+  color: $off-white;
+  background: linear-gradient(
+    232deg,
+    rgba(70, 78, 112, 1) 0%,
+    rgba(32, 55, 70, 1) 100%
+  );
+  padding: 90px 0;
+  &__container {
+    position: relative;
+    padding: 0 88px;
+    @media screen and (max-width: 720px) {
+      padding: 0 1.5rem;
+    }
+  }
+  &__title {
+    font-size: 64px;
+    max-width: 670px;
+    line-height: 0.85em;
+    @media screen and (max-width: 1060px) {
+      font-size: 44px;
+    }
+  }
+  &__subtitle {
+    color: $white;
+    font-size: 18px;
+  }
+  &__button {
+    width: 314px;
+    height: 56px;
+    @include rounded-banner-button;
+  }
+  &__initials {
+    @include border-rounded;
+    width: 39px;
+    height: 39px;
+    border: 2px solid $black;
+    background-color: $body-background;
+    color: $dark-gray;
+    font-weight: 700;
+    font-size: 12px;
+    margin-right: 1rem;
+  }
+  &__review {
+    margin-top: 8rem;
+  }
+  &__customer-name {
+    font-weight: 700;
+  }
+  &__customer-review {
+    margin: 1rem 0;
+    width: 331px;
+  }
+  &__product {
+    margin-left: -5rem;
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+}
+.simple-routine-section {
+  .container {
+    padding-top: 50px;
+  }
+  color: $dark-gray;
+  &__banner {
+    @include rounded-banner-button;
+    max-width: 1264px;
+    padding: 1.032rem;
+    margin-bottom: 5rem;
+  }
+  &__title {
+    max-width: 576px;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 0.85em;
+
+    @media screen and (max-width: 1060px) {
+      font-size: 60px;
+    }
+  }
+  &__description {
+    max-width: 545px;
+    font-size: 18px;
+    margin: 2rem 0;
+  }
+  &__thumbnails {
+    background-color: $white;
+    border-radius: 52px;
+    padding: 74px 38px;
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+  &__thumbnails-text {
+    max-width: 197px;
+    margin-left: 1rem;
+    @media screen and (max-width: 1000px) {
+      max-width: 100%;
+    }
+    @media screen and (max-width: 500px) {
+      margin-left: 0;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+  &__content {
+    gap: 3rem;
+  }
+  &__d1-img {
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+}
+
+.just-minute-a-day-section {
+  &__heading {
+    text-align: center;
+  }
+  &__clock {
+    margin: 1.5rem 0;
+  }
+  &__title {
+    font-size: 80px;
+    font-weight: 900;
+    color: $dark-gray;
+    padding-bottom: 90px;
+    @media screen and (max-width: 1060px) {
+      font-size: 60px;
+    }
+    @media screen and (max-width: 720px) {
+      font-size: 40px;
+    }
+  }
+  &__product {
+    max-width: 332.6px;
+    position: relative;
+  }
+  &__description {
+    width: 225.73px;
+    margin-left: 1rem;
+  }
+  &__steps {
+    margin: 1.5rem 0;
+  }
+  &__number {
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid rgba(0, 0, 0, 1);
+    background-color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    border-radius: 50px;
+  }
+  hr {
+    max-width: 100%;
+    margin: 1rem 0;
+    border: 1.5px solid rgba(70, 79, 110, 1);
+    opacity: 0.2;
+  }
+}
+.results-you-can-see-section {
+  text-align: center;
+
+  &__title {
+    color: $dark-gray;
+    font-size: 50px;
+    font-weight: 900;
+    @media screen and (max-width: 720px) {
+      font-size: 40px;
+    }
+  }
+  &__description {
+    max-width: 702px;
+    margin: 1rem auto 3rem;
+  }
+  &__routine {
+    position: relative;
+  }
+  &__tagline {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    max-width: 592px;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: left;
+    line-height: 1em;
+    color: $light-gray;
+    @media screen and (max-width: 720px) {
+      font-size: 30px;
+      padding: 1rem;
+      left: 2rem;
+    }
+  }
+}
+.announcement-banner-section {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  position: relative;
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    animation: scroll-left 20s linear infinite;
+
+    li {
+      color: $dark-gray;
+      font-family: "Inter", sans-serif;
+      font-size: 15px;
+      font-weight: 900;
+      margin-top: 1rem;
+
+      display: inline;
+      margin-right: 1.5rem;
+      font-size: 1rem;
+      &:before {
+        content: url("/assets/images/check.svg");
+        position: relative;
+        top: 6px;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+/* Keyframes for marquee effect */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-40%);
+  }
+}
+
+.daily-benefits-section {
+  color: $dark-gray;
+  &__title {
+    font-size: 50px;
+    font-weight: 900;
+    max-width: 540px;
+    line-height: 0.9em;
+    @media screen and (max-width: 720px) {
+      font-size: 40px;
+    }
+  }
+  &__description_title {
+    font-size: 23px;
+    font-weight: 900;
+    line-height: 0.9em;
+    margin-top: 1.5rem;
+  }
+  &__thumbnails {
+    margin: 2rem 0;
+    gap: 1rem;
+  }
+  &__description {
+    max-width: 364px;
+  }
+
+  &__description_text {
+    font-size: 15px;
+    margin-top: 1rem;
+  }
+}
+
+.get-the-set-section {
+  border-top: 2px solid $dark-gray;
+  border-bottom: 2px solid $dark-gray;
+  color: $dark-gray;
+  background-color: $white;
+
+  &__content {
+    max-width: 467px;
+    margin-bottom: 2rem;
+  }
+  &__start-text {
+    @include rounded-banner-button;
+    max-width: 324px;
+    padding: 0.5rem;
+  }
+  &__title {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 1rem 0;
+    @media screen and (max-width: 720px) {
+      font-size: 40px;
+    }
+  }
+  &__button {
+    max-width: 393px;
+    font-size: 18px;
+    padding: 1.24rem 2rem;
+    @include border-rounded;
+  }
+  &--bg-base {
+    background-color: get-color(base);
+    border: none;
+  }
+  del {
+    color: rgba(108, 115, 116, 1);
+  }
+}
+
+.best-in-class-section {
+  color: $dark-gray;
+
+  &__title {
+    color: $dark-gray;
+    font-size: 50px;
+    max-width: 693px;
+    @media screen and (max-width: 720px) {
+      font-size: 40px;
+    }
+  }
+  &__ingredient-list {
+    @include rounded-banner-button;
+    max-width: 314px;
+    margin: 1rem 0 4rem;
+    padding: 1rem 2rem;
+  }
+  &__ingredient {
+    @media screen and (max-width: 720px) {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+  }
+  &__ingredient-wrapper {
+    margin-bottom: 3rem;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+  }
+
+  &__ingredient_desc {
+    font-weight: 400;
+    color: $navy-blue;
+    font-size: 18px;
+  }
+  &__ingredient-small-text {
+    color: #b7bbc9;
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+.three-perfect-formulas {
+  background-color: get-color(base-secondary);
+  color: $off-white;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+  &__small-banner {
+    @include rounded-banner-button;
+    max-width: 256px;
+    margin: 0 auto 2rem;
+    padding: 0.3rem;
+  }
+  &__title {
+    font-size: 80px;
+    text-align: center;
+    @media screen and (max-width: 1060px) {
+      font-size: 60px;
+    }
+    @media screen and (max-width: 720px) {
+      font-size: 40px;
+    }
+  }
+  &__desc {
+    max-width: 357px;
+    margin-right: 1rem;
+  }
+  &__product {
+    gap: 6rem;
+    margin-bottom: 3rem;
+  }
+  &__product-title {
+    font-size: 50px;
+    line-height: 1em;
+    @media screen and (max-width: 720px) {
+      font-size: 30px;
+    }
+  }
+}
+
+.whats-our-fan-say {
+  padding: 88px 1px;
+  &__title {
+    font-size: 50px;
+    text-align: center;
+    color: $dark-gray;
+    margin-bottom: 4rem;
+    @media screen and (max-width: 720px) {
+      font-size: 40px;
+    }
+  }
+  &__fan-image {
+    border-radius: 30px;
+    border: 1.5px solid rgba(0, 38, 87, 1);
+  }
+  &__reviews {
+    gap: 1rem;
+  }
+  &__reviews-card {
+    position: relative;
+  }
+  &__play-button {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+  &__mute-volume {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  &__card {
+    background: $white;
+    border-radius: 20px;
+    padding: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: 90%;
+  }
+  &__card-button {
+    @include border-rounded;
+    width: 92px;
+    margin-bottom: 0;
+  }
+  &__product-name {
+    color: rgba(0, 38, 87, 1);
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  &__product-price {
+    color: rgba(67, 76, 108, 1);
+    font-size: 14px;
+  }
+}
+
+.footer {
+  color: $mint-white;
+  background-color: get-color(base-secondary);
+
+  &__join-the-club {
+  }
+  &__join-the-club-text {
+    font-family: "Inter", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+  }
+  &__menu {
+    gap: 3rem;
+    a {
+      color: $light-gray;
+      opacity: 0.3;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+  &__menu-title {
+    font-size: 21px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+  }
+  &__statement {
+    width: 300px;
+    height: 90px;
+    border: 2px solid #fff;
+    border-radius: 17px;
+    opacity: 0.3;
+    font-size: 10px;
+    padding: 0.5rem;
+    color: $light-gray;
+  }
+  &__small-text {
+    color: $light-gray;
+    opacity: 0.3;
+  }
+  &__social-media-link {
+    width: 51px;
+    height: 51px;
+    border-radius: 50px;
+    background-color: $white;
+  }
+  &__social-media {
+    gap: 0.5rem;
+    margin: 1rem 0 3rem;
+  }
+  &__input {
+    margin: 1rem 0;
+    position: relative;
+    input {
+      padding: 1rem;
+      height: 62px;
+    }
+  }
+  &__button {
+    position: absolute;
+    right: 8px;
+    top: 6px;
+    font-size: 18px;
+  }
+}

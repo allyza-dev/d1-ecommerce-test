@@ -1,164 +1,825 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/app.css" />
   </head>
   <body>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <h1>Welcome to Foundation</h1>
+    <div class="header-banner-section">
+      FREE SHIPPING ON US ORDERS OVER $100
+    </div>
+    <header class="header">
+      <div class="grid-x align-justify align-middle container">
+        <div>
+          <img
+            src="./assets/images/menu.svg"
+            alt="Menu"
+            width="32"
+            height="22"
+          />
+          <img
+            src="./assets/images/logo.svg"
+            alt="Logo"
+            width="42"
+            height="55"
+          />
+        </div>
+        <div>
+          <button class="header__button button secondary">GET STARTED</button>
+          <img
+            src="./assets/images/cart.png"
+            alt="Cart"
+            width="36.52"
+            height="32.88"
+          />
         </div>
       </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <div class="callout">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="https://get.foundation/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
+    </header>
+    <div class="hero-section">
+      <div class="hero-section__container container">
+        <div class="grid-x align-top">
+          <div class="cell auto">
+            <h1 class="hero-section__title">
+              SKINCARE FOR GUYS THAT AREN’T INTO SKINCARE
+            </h1>
+            <p class="hero-section__subtitle">
+              TRY THE ONE MINUTE SKINCARE ROUTINE
+            </p>
+            <button class="hero-section__button button primary">
+              TRY TODAY!
+            </button>
+            <div class="hero-section__review">
+              <img
+                src="./assets/images/yellow-star.svg"
+                alt="Star"
+                width="116"
+                height="18"
+              />
+              <div class="hero-section__customer-review">
+                “I LOVE THIS STUFF, IT TOTALLY CHANGED THE GAME FOR ME”
               </div>
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="https://github.com/foundation/foundation-emails/discussions">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="https://github.com/foundation/foundation-sites">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-              </div>
-              <div class="large-4 medium-4 medium-pull-2 cell">
-                <p><a href="https://twitter.com/FoundationCSS">@FoundationCSS</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it.</p>
+              <div class="grid-x align-middle">
+                <span
+                  class="hero-section__initials grid-x align-center align-middle"
+                >
+                  P.S
+                </span>
+                <span class="hero-section__customer-name">PETER S.</span>
               </div>
             </div>
           </div>
+          <img
+            src="./assets/images/combo-product.png"
+            alt="Product"
+            width="611.98"
+            height="617.01"
+            class="hero-section__product cell auto"
+          />
         </div>
       </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-8 medium-8 cell">
-          <h5>Here&rsquo;s your basic grid:</h5>
-          <!-- Grid Example -->
-
-          <div class="grid-x grid-padding-x">
-            <div class="large-12 cell">
-              <div class="primary callout">
-                <p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-          </div>
-
-          <hr />
-
-          <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-          <form>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-12.cell" />
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <div class="grid-x">
-                  <label>Input Label</label>
-                  <div class="input-group">
-                    <input type="text" placeholder="small-9.cell" class="input-group-field" />
-                    <span class="input-group-label">.com</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Select Box</label>
-                <select>
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-6 medium-6 cell">
-                <label>Choose Your Favorite</label>
-                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-              </div>
-              <div class="large-6 medium-6 cell">
-                <label>Check these out</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Textarea Label</label>
-                <textarea placeholder="small-12.cell"></textarea>
-              </div>
-            </div>
-          </form>
+    </div>
+    <div class="simple-routine-section">
+      <div class="container">
+        <div class="simple-routine-section__banner grid-x align-center-middle">
+          Just &nbsp;<u>one minute</u>&nbsp; a day will make your skin look
+          healthier and younger
         </div>
-
-        <div class="large-4 medium-4 cell">
-          <h5>Try one of these buttons:</h5>
-          <p><a href="#" class="button">Simple Button</a><br/>
-          <a href="#" class="success button">Success Btn</a><br/>
-          <a href="#" class="alert button">Alert Btn</a><br/>
-          <a href="#" class="secondary button">Secondary Btn</a></p>
-          <div class="callout">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-            <a href="https://get.foundation/sites/docs/" class="small button">Go to Foundation Docs</a>
+        <div class="grid-x align-center-middle simple-routine-section__content">
+          <div class="cell auto">
+            <h2 class="simple-routine-section__title">
+              A Simple Routine That Works
+            </h2>
+            <p class="simple-routine-section__description">
+              Say goodbye to complicated skincare routines. Our mens' skincare
+              line is designed for simplicity and effectiveness. With our
+              lightweight formulas, you can achieve healthier and
+              younger-looking skin with minimal effort. Perfect for guys who are
+              new to skincare or just want to keep it simple.
+            </p>
+            <hr />
+            <ul>
+              <li>Lightweight formulas</li>
+              <li>Easy to use formats</li>
+              <li>Clean Ingredients</li>
+              <li>Everything you need, nothing you don’t</li>
+            </ul>
+          </div>
+          <img
+            src="./assets/images/mens-care.png"
+            alt="Mens care"
+            width="568"
+            height="670"
+            class="cell auto simple-routine-section__d1-img"
+          />
+        </div>
+        <div class="simple-routine-section__thumbnails grid-x align-around">
+          <div class="grid-x align-center-middle">
+            <img
+              src="./assets/images/thumbnail1.png"
+              alt="Cutting-edge Korean Skincare Technology"
+              width="135"
+              height="135"
+            />
+            <p class="simple-routine-section__thumbnails-text">
+              Cutting-edge <br />
+              Korean Skincare Technology
+            </p>
+          </div>
+          <div class="grid-x align-center-middle">
+            <img
+              src="./assets/images/thumbnail2.png"
+              alt="Science-backed Ingredients"
+              width="135"
+              height="135"
+            />
+            <p class="simple-routine-section__thumbnails-text">
+              Science-backed Ingredients
+            </p>
+          </div>
+          <div class="grid-x align-center-middle">
+            <img
+              src="./assets/images/thumbnail3.png"
+              alt="Science-backed Ingredients"
+              width="135"
+              height="135"
+            />
+            <p class="simple-routine-section__thumbnails-text">
+              Dematologically Tested
+            </p>
           </div>
         </div>
       </div>
     </div>
+    <div class="just-minute-a-day-section">
+      <div class="container">
+        <div class="just-minute-a-day-section__heading">
+          <p>Heres how D1 works</p>
+          <img
+            src="./assets/images/clock.svg"
+            alt=""
+            width="110.22"
+            height="109.92"
+            class="just-minute-a-day-section__clock"
+          />
+          <h2 class="just-minute-a-day-section__title">JUST 1 MINUTE A DAY</h2>
+        </div>
+        <div class="grid-x align-spaced">
+          <div class="just-minute-a-day-section__product">
+            <div
+              class="just-minute-a-day-section__number grid-x align-center-middle"
+            >
+              1
+            </div>
+            <img
+              src="./assets/images/wash-your-face.png"
+              alt="Wash your face"
+              width="332.6"
+              height="480"
+            />
+            <div class="grid-x align-middle just-minute-a-day-section__steps">
+              <img
+                src="./assets/images/product/cleanser.png"
+                alt="Cleanser"
+                width="87.71"
+                height="123"
+              />
+              <p class="just-minute-a-day-section__description">
+                Wash your face with our Bamboo Charcoal Cleanser
+              </p>
+            </div>
+          </div>
+          <div class="just-minute-a-day-section__product">
+            <div
+              class="just-minute-a-day-section__number grid-x align-center-middle"
+            >
+              2
+            </div>
+            <img
+              src="./assets/images/apply-a-dime.png"
+              alt="Apply a moisturizer"
+              width="332.6"
+              height="480"
+            />
+            <div class="grid-x align-middle just-minute-a-day-section__steps">
+              <img
+                src="./assets/images/product/mositurizer.png"
+                alt="Moisturizer"
+                width="59.18"
+                height="81.91"
+                class="align-self-top"
+              />
+              <p class="just-minute-a-day-section__description">
+                Apply a dime size amount of All Day Moisturizer evenly to your
+                face
+              </p>
+            </div>
+          </div>
+          <div class="just-minute-a-day-section__product">
+            <div
+              class="just-minute-a-day-section__number grid-x align-center-middle"
+            >
+              3
+            </div>
+            <img
+              src="./assets/images/apply-an-eyecream.png"
+              alt="Apply an eyecream"
+              width="332.6"
+              height="480"
+            />
+            <div class="grid-x align-middle just-minute-a-day-section__steps">
+              <img
+                src="./assets/images/product/stick.png"
+                alt="Eyecream"
+                width="67.8"
+                height="117.68"
+              />
+              <p class="just-minute-a-day-section__description">
+                Apply small amount of our Eye Cream under your eyes and around
+                the sides
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div class="results-you-can-see-section">
+      <div class="results-you-can-see-section__content container">
+        <h2 class="results-you-can-see-section__title">RESULTS YOU CAN SEE</h2>
+        <p class="results-you-can-see-section__description">
+          A simple skincare routine is essential to reduce and prevent fine
+          lines, wrinkles, dry skin, and dark splotches that start to appear on
+          your face as you age.
+          <br /><br />
+          If you dont feel better and see resuilts in 30 days, you can keep the
+          product and we’ll send you a full refund
+        </p>
+      </div>
+      <div class="results-you-can-see-section__routine">
+        <img
+          src="./assets/images/one-minute-routine.jpg"
+          alt="The one minute routine that will save your face"
+        />
+        <h3 class="results-you-can-see-section__tagline">
+          “THE ONE MINUTE ROUTINE THAT WILL SAVE YOUR FACE”
+        </h3>
+      </div>
+    </div>
+    <div class="announcement-banner-section">
+      <div class="announcement-banner-section__track">
+        <ul class="announcement-banner-section__list">
+          <li>ALL-NATURAL INGREDIENTS</li>
+          <li>FORMULATED BY DOCTORS & PHDS</li>
+          <li>100% RISK-FREE RETURNS</li>
+          <li>NO PRESCRIPTION REQUIRED</li>
+        </ul>
+      </div>
+    </div>
+    <div class="daily-benefits-section">
+      <div class="container">
+        <h2 class="daily-benefits-section__title">
+          DAILY BENEFITS. LONG-TERM RESULTS
+        </h2>
+        <p class="daily-benefits-section__text">We started D1 beacuse....</p>
+        <div class="daily-benefits-section__thumbnails grid-x align-justify">
+          <div class="daily-benefits-section__description">
+            <img
+              src="./assets/images/look-fresher.png"
+              alt="Look fresher"
+              width="364"
+              height="364"
+            />
+            <h4 class="daily-benefits-section__description_title">
+              LOOK FRESHER AND MORE CONFIDENT
+            </h4>
+            <p class="daily-benefits-section__description_text">
+              Prevent and reduce fine lines and wrinkles that develop with dry
+              skin as you age
+            </p>
+          </div>
+          <div class="daily-benefits-section__description">
+            <img
+              src="./assets/images/prevent-aging.png"
+              alt="Prevent aging"
+              width="364"
+              height="364"
+            />
+            <h4 class="daily-benefits-section__description_title">
+              PREVENT AGING AND MAINTAIN YOUTHFUL SKIN
+            </h4>
+            <p class="daily-benefits-section__description_text">
+              Prevent and reduce fine lines and wrinkles that develop with dry
+              skin as you age
+            </p>
+          </div>
+          <div class="daily-benefits-section__description">
+            <img
+              src="./assets/images/boost-skin.png"
+              alt="Prevent aging"
+              width="364"
+              height="364"
+            />
+            <h4 class="daily-benefits-section__description_title">
+              BOOST YOUR SKIN HEALTH
+            </h4>
+            <p class="daily-benefits-section__description_text">
+              Prevent and reduce fine lines and wrinkles that develop with dry
+              skin as you age
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="get-the-set-section">
+      <div class="container grid-x align-justify">
+        <div class="get-the-set-section__content">
+          <div class="get-the-set-section__start-text">
+            Start your 1 minute routine
+          </div>
+          <h2 class="get-the-set-section__title">GET THE SET</h2>
+          <p class="get-the-set-section__description">
+            Experience the ultimate simplicity and effectiveness with our
+            complete skincare set. Designed for men who want great skin without
+            the hassle, our set includes everything you need for a daily routine
+            that takes just one minute.
+          </p>
+          <hr />
+          <ul class="get-the-set-section__list">
+            <li>$10 Off Each Pouch</li>
+            <li>Never Run Out</li>
+            <li>No Commitment. Cancel Anytime</li>
+            <li>Pause, Delay, or Change Frequency</li>
+          </ul>
+          <button
+            type="button"
+            class="get-the-set-section__button button secondary"
+          >
+            Add to cart — $58.99 <del>$10.99</del>
+          </button>
+        </div>
+        <img
+          src="./assets/images/product.png"
+          alt="Product"
+          width="606.97"
+          height="512.68"
+        />
+      </div>
+    </div>
+    <div class="best-in-class-section">
+      <div class="container">
+        <h2 class="best-in-class-section__title">
+          BEST-IN-CLASS INGREDIENTS THAT WORK
+        </h2>
+        <div class="best-in-class-section__ingredient-list">
+          FULL INGREDIENT LIST
+        </div>
+        <div class="best-in-class-section__ingredient grid-x align-justify">
+          <div class="cell small-4 best-in-class-section__ingredient-wrapper">
+            <img
+              src="./assets/images/hyaluronic.jpg"
+              alt="Hyaluronic Acid"
+              width="132"
+              height="132"
+            />
+            <p class="best-in-class-section__ingredient_desc">
+              Hyaluronic Acid <br />
+              <span class="best-in-class-section__ingredient-small-text"
+                >ALL DAY MOISTURIZER</span
+              >
+            </p>
+          </div>
+          <div class="cell small-4 best-in-class-section__ingredient-wrapper">
+            <img
+              src="./assets/images/niacinamide.jpg"
+              alt="Niacinamide"
+              width="132"
+              height="132"
+            />
+            <p class="best-in-class-section__ingredient_desc">
+              Niacinamide <br />
+              <span class="best-in-class-section__ingredient-small-text"
+                >ALL DAY MOISTURIZER</span
+              >
+            </p>
+          </div>
+          <div class="cell small-4 best-in-class-section__ingredient-wrapper">
+            <img
+              src="./assets/images/bamboo-charcoal.jpg"
+              alt="Bamboo Charcoal"
+              width="132"
+              height="132"
+            />
+            <p class="best-in-class-section__ingredient_desc">
+              Bamboo Charcoal <br />
+              <span class="best-in-class-section__ingredient-small-text"
+                >ALL DAY MOISTURIZER</span
+              >
+            </p>
+          </div>
+          <div class="cell small-4 best-in-class-section__ingredient-wrapper">
+            <img
+              src="./assets/images/centella.jpg"
+              alt="Centella Asiatica"
+              width="132"
+              height="132"
+            />
+            <p class="best-in-class-section__ingredient_desc">
+              Centella Asiatica <br />
+              <span class="best-in-class-section__ingredient-small-text"
+                >Charcoal Cleanser</span
+              >
+            </p>
+          </div>
+          <div class="cell small-4 best-in-class-section__ingredient-wrapper">
+            <img
+              src="./assets/images/roseoil.jpg"
+              alt="Rose Oil"
+              width="132"
+              height="132"
+            />
+            <p class="best-in-class-section__ingredient_desc">
+              Rose Oil <br />
+              <span class="best-in-class-section__ingredient-small-text"
+                >Charcoal Cleanser</span
+              >
+            </p>
+          </div>
+          <div class="cell small-4 best-in-class-section__ingredient-wrapper">
+            <img
+              src="./assets/images/bamboo.jpg"
+              alt="Bamboo Charcoal"
+              width="132"
+              height="132"
+            />
+            <p class="best-in-class-section__ingredient_desc">
+              Bamboo Charcoal <br />
+              <span class="best-in-class-section__ingredient-small-text"
+                >Charcoal Cleanser</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="three-perfect-formulas">
+      <div class="container">
+        <div class="three-perfect-formulas__heading">
+          <div class="three-perfect-formulas__small-banner">
+            Just 1 minute a day
+          </div>
+          <h2 class="three-perfect-formulas__title">THREE PERFECT FORMULAS</h2>
+          <p>A <u>game changer</u> for your skin</p>
+        </div>
+        <div class="grid-x align-center-middle three-perfect-formulas__product">
+          <div class="three-perfect-formulas__desc">
+            <h3 class="three-perfect-formulas__product-title">
+              CHARCOAL FACE WASH
+            </h3>
+            <p>
+              Omne animal, simul atque haec putat, ut labore et impetus quo
+              voluptas nulla pariatur? at magnum periculum adiit in quo
+              quaerimus.
+            </p>
+          </div>
+          <img
+            src="./assets/images/cleanser.png"
+            alt="Cleanser"
+            width="202"
+            height="462.72"
+          />
+        </div>
+        <div
+          class="grid-x align-center-middle flex-dir-row-reverse three-perfect-formulas__product"
+        >
+          <div class="three-perfect-formulas__desc">
+            <h3 class="three-perfect-formulas__product-title">
+              CHARCOAL FACE WASH
+            </h3>
+            <p>
+              Omne animal, simul atque haec putat, ut labore et impetus quo
+              voluptas nulla pariatur? at magnum periculum adiit in quo
+              quaerimus.
+            </p>
+          </div>
+          <img
+            src="./assets/images/Moisturize.png"
+            alt="Moisturizer"
+            width="280"
+            height="360.72"
+          />
+        </div>
+        <div class="grid-x align-center-middle three-perfect-formulas__product">
+          <div class="three-perfect-formulas__desc">
+            <h3 class="three-perfect-formulas__product-title">
+              DAILY EYE CREAM
+            </h3>
+            <p>
+              Omne animal, simul atque haec putat, ut labore et impetus quo
+              voluptas nulla pariatur? at magnum periculum adiit in quo
+              quaerimus.
+            </p>
+          </div>
+          <img
+            src="./assets/images/EyeStick.png"
+            alt="Eye stick"
+            width="199.83"
+            height="381.46"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="whats-our-fan-say">
+      <h2 class="whats-our-fan-say__title">WHAT OUR FANS SAY</h2>
+      <div class="grid-x whats-our-fan-say__reviews align-center">
+        <div class="whats-our-fan-say__reviews-card">
+          <img
+            src="./assets/images/fan.jpg"
+            alt="What our fan say"
+            width="332"
+            height="558"
+            class="whats-our-fan-say__fan-image"
+          />
+          <img
+            src="./assets/images/element/playbutton.svg"
+            alt="Play button"
+            width="68"
+            height="68"
+            class="whats-our-fan-say__play-button"
+          />
+          <img
+            src="./assets/images/element/mute.svg"
+            alt="Mute volume"
+            width="38"
+            height="38"
+            class="whats-our-fan-say__mute-volume"
+          />
+          <div
+            class="whats-our-fan-say__card grid-x align-justify align-middle"
+          >
+            <div class="whats-our-fan-say__card-content">
+              <img
+                src="./assets/images/stars-1.svg"
+                alt="Star review"
+                width="55.52"
+                height="9.17"
+              />
+              <div class="whats-our-fan-say__product-name">D1 Eye Cream</div>
+              <div class="whats-our-fan-say__product-price">$20.99</div>
+            </div>
+            <button class="button secondary whats-our-fan-say__card-button">
+              ADD
+            </button>
+          </div>
+        </div>
+        <div class="whats-our-fan-say__reviews-card">
+          <img
+            src="./assets/images/fan.jpg"
+            alt="What our fan say"
+            width="332"
+            height="558"
+            class="whats-our-fan-say__fan-image"
+          />
+          <img
+            src="./assets/images/element/playbutton.svg"
+            alt="Play button"
+            width="68"
+            height="68"
+            class="whats-our-fan-say__play-button"
+          />
+          <img
+            src="./assets/images/element/mute.svg"
+            alt="Mute volume"
+            width="38"
+            height="38"
+            class="whats-our-fan-say__mute-volume"
+          />
+          <div
+            class="whats-our-fan-say__card grid-x align-justify align-middle"
+          >
+            <div class="whats-our-fan-say__card-content">
+              <img
+                src="./assets/images/stars-1.svg"
+                alt="Star review"
+                width="55.52"
+                height="9.17"
+              />
+              <div class="whats-our-fan-say__product-name">D1 Face Wash</div>
+              <div class="whats-our-fan-say__product-price">$20.99</div>
+            </div>
+            <button class="button secondary whats-our-fan-say__card-button">
+              ADD
+            </button>
+          </div>
+        </div>
+        <div class="whats-our-fan-say__reviews-card">
+          <img
+            src="./assets/images/fan.jpg"
+            alt="What our fan say"
+            width="332"
+            height="558"
+            class="whats-our-fan-say__fan-image"
+          />
+          <img
+            src="./assets/images/element/playbutton.svg"
+            alt="Play button"
+            width="68"
+            height="68"
+            class="whats-our-fan-say__play-button"
+          />
+          <img
+            src="./assets/images/element/mute.svg"
+            alt="Mute volume"
+            width="38"
+            height="38"
+            class="whats-our-fan-say__mute-volume"
+          />
+          <div
+            class="whats-our-fan-say__card grid-x align-justify align-middle"
+          >
+            <div class="whats-our-fan-say__card-content">
+              <img
+                src="./assets/images/stars-1.svg"
+                alt="Star review"
+                width="55.52"
+                height="9.17"
+              />
+              <div class="whats-our-fan-say__product-name">D1 Complete Set</div>
+              <div class="whats-our-fan-say__product-price">$20.99</div>
+            </div>
+            <button class="button secondary whats-our-fan-say__card-button">
+              ADD
+            </button>
+          </div>
+        </div>
+        <div class="whats-our-fan-say__reviews-card">
+          <img
+            src="./assets/images/fan.jpg"
+            alt="What our fan say"
+            width="332"
+            height="558"
+            class="whats-our-fan-say__fan-image"
+          />
+          <img
+            src="./assets/images/element/playbutton.svg"
+            alt="Play button"
+            width="68"
+            height="68"
+            class="whats-our-fan-say__play-button"
+          />
+          <img
+            src="./assets/images/element/mute.svg"
+            alt="Mute volume"
+            width="38"
+            height="38"
+            class="whats-our-fan-say__mute-volume"
+          />
+          <div
+            class="whats-our-fan-say__card grid-x align-justify align-middle"
+          >
+            <div class="whats-our-fan-say__card-content">
+              <img
+                src="./assets/images/stars-1.svg"
+                alt="Star review"
+                width="55.52"
+                height="9.17"
+              />
+              <div class="whats-our-fan-say__product-name">D1 Moisturizer</div>
+              <div class="whats-our-fan-say__product-price">$20.99</div>
+            </div>
+            <button class="button secondary whats-our-fan-say__card-button">
+              ADD
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="get-the-set-section get-the-set-section--bg-base">
+      <div class="container grid-x align-justify">
+        <div class="get-the-set-section__content">
+          <div class="">Start your 1 minute routine</div>
+          <h2 class="get-the-set-section__title">GET THE SET</h2>
+          <p class="get-the-set-section__description">
+            Experience the ultimate simplicity and effectiveness with our
+            complete skincare set. Designed for men who want great skin without
+            the hassle, our set includes everything you need for a daily routine
+            that takes just one minute.
+          </p>
+          <hr />
+          <ul class="get-the-set-section__list">
+            <li>$10 Off Each Pouch</li>
+            <li>Never Run Out</li>
+            <li>No Commitment. Cancel Anytime</li>
+            <li>Pause, Delay, or Change Frequency</li>
+          </ul>
+          <button
+            type="button"
+            class="get-the-set-section__button button secondary"
+          >
+            Add to cart — $58.99
+          </button>
+        </div>
+        <img
+          src="./assets/images/product.png"
+          alt="Product"
+          width="606.97"
+          height="512.68"
+        />
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="grid-x align-justify footer__join-the-club">
+          <div>
+            <h6 class="footer__join-the-club-text">JOIN THE D1 CLUB</h6>
+            <p>Subscribe for deals, and tips on mens skincare</p>
+          </div>
+          <img
+            src="./assets/images/logo-white.svg"
+            alt="Logo"
+            width="42"
+            height="55"
+          />
+        </div>
+        <div class="footer__input">
+          <input type="text" placeholder="Enter you email" />
+          <button class="button secondary footer__button">SUBMIT</button>
+        </div>
+        <div class="footer__social-media grid-x">
+          <a
+            href=""
+            class="footer__social-media-link grid-x align-center-middle"
+          >
+            <img src="./assets/images/intsa.png" alt="Instagram" />
+          </a>
+          <a
+            href=""
+            class="footer__social-media-link grid-x align-center-middle"
+          >
+            <img src="./assets/images/tiktok.png" alt="tiktok" />
+          </a>
+          <a
+            href=""
+            class="footer__social-media-link grid-x align-center-middle"
+          >
+            <img src="./assets/images/fb.png" alt="facebook" />
+          </a>
+        </div>
+        <div class="footer__menu grid-x">
+          <div>
+            <h6 class="footer__menu-title">SUPPORT</h6>
+            <ul>
+              <li><a href="http://">Support</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">FAQS</a></li>
+              <li><a href="">Account</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6 class="footer__menu-title">COMPANY</h6>
+            <ul>
+              <li><a href="http://">Company</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">Philosopy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid-x align-bottom align-justify">
+          <small class="footer__small-text"
+            >@D1 2025 — site by manufactur
+          </small>
+          <div class="footer__statement">
+            These statements have not been evaluated by the Food and Drug
+            Administration. This product is not inteded to diagnose, treat,
+            cure, or prevent any disease. Lorem ipsum dolor sit amet.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const track = document.querySelector(
+          ".announcement-banner-section__track"
+        );
+        const list = document.querySelector(
+          ".announcement-banner-section__list"
+        );
 
+        // Clone the list for seamless scroll
+        const clone = list.cloneNode(true);
+        track.appendChild(clone);
+      });
+    </script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
     <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
