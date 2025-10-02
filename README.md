@@ -1,47 +1,54 @@
-# Foundation for Sites Template
+# D1 Code Challenge
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
+## Introduction
 
-This is the basic starter project for [Foundation for Sites 6](http://foundation.zurb.com/sites). It includes a Sass compiler and a starter HTML file for you.
+This is built using the **[Foundation Framework](https://get.foundation/sites/docs/)**
 
-## Installation
+## Project Structure
 
-To use this template, your computer needs:
-
-- [NodeJS](https://nodejs.org/en/) (12 or greater)
-- [Git](https://git-scm.com/)
-
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
-
-### Using the CLI
-
-Install the Foundation CLI with this command:
-
-```bash
-npm install foundation-cli --global
+```
+project-root/
+│── assets/
+│ └── images/
+│
+│── css/ # Compiled CSS files
+│ ├── app.css
+│ └── app.css.map
+│
+│── js/ # JavaScript files
+│ └── app.js
+│
+│── scss/ # SCSS source files
+│ ├── _settings.scss # Foundation settings overrides
+│ └── app.scss # Main SCSS entry point
+│
+│── .gitignore
+│── gulpfile.js
+│── index.html # Main entry HTML file
+│── package.json
+│── package-lock.json
+└── README.md
 ```
 
-Use this command to set up a blank Foundation for Sites project with this template:
+# Installation & Setup
+
+1. Clone the repository:
 
 ```bash
-foundation new --framework sites --template basic
+  git clone https://github.com/allyza-dev/d1-ecommerce-test.git
+  cd d1-ecommerce-test
 ```
 
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
-
-### Manual Setup
-
-To manually set up the template, first download it with Git:
+2. Install dependencies (Foundation + Sass compiler)
 
 ```bash
-git clone https://github.com/zurb/foundation-sites-template projectname
+  npm install
 ```
 
-Then open the folder in your command line, and install the needed dependencies:
+3. Checkout branch
 
 ```bash
-cd projectname
-npm install
+  git checkout dev
 ```
 
-Finally, run `npm start` to run the Sass compiler. It will re-run every time you save a Sass file.
+4. Finally, run `npm start ` to run the project.
