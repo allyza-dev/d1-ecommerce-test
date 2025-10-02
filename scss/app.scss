@@ -75,7 +75,7 @@ h4 {
 }
 
 @mixin rounded-banner-button {
-  font-size: 18px;
+  font-size: 1.125rem;
   background-color: $primary-color;
   text-align: center;
   color: $dark-gray;
@@ -87,7 +87,7 @@ ul {
   margin-left: 0;
   li {
     margin-bottom: 1.438rem;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: $dark-gray;
     &:before {
       content: url("/assets/images/check.svg");
@@ -117,7 +117,7 @@ hr {
 .header-banner-section {
   text-align: center;
   background-color: $primary-color;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
   padding: 0.28rem;
 }
@@ -131,7 +131,7 @@ hr {
     width: 201px;
     padding: 0.813rem;
     margin: 0;
-    font-size: 18px;
+    font-size: 1.125rem;
     @media screen and (max-width: 414px) {
       display: none;
     }
@@ -158,16 +158,16 @@ hr {
     }
   }
   &__title {
-    font-size: 64px;
+    font-size: 4rem;
     max-width: 670px;
     line-height: 0.85em;
     @media screen and (max-width: 1060px) {
-      font-size: 44px;
+      font-size: 2.75rem;
     }
   }
   &__subtitle {
     color: $white;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   &__button {
     width: 314px;
@@ -182,7 +182,7 @@ hr {
     background-color: $body-background;
     color: $dark-gray;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 0.75rem;
     margin-right: 1rem;
   }
   &__review {
@@ -215,17 +215,17 @@ hr {
   }
   &__title {
     max-width: 576px;
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: 900;
     line-height: 0.85em;
 
     @media screen and (max-width: 1060px) {
-      font-size: 60px;
+      font-size: 3.75rem;
     }
   }
   &__description {
     max-width: 545px;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 2rem 0;
   }
   &__thumbnails {
@@ -265,15 +265,15 @@ hr {
     margin: 1.5rem 0;
   }
   &__title {
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: 900;
     color: $dark-gray;
     padding-bottom: 90px;
     @media screen and (max-width: 1060px) {
-      font-size: 60px;
+      font-size: 3.75rem;
     }
     @media screen and (max-width: 720px) {
-      font-size: 40px;
+      font-size: 2.5rem;
     }
   }
   &__product {
@@ -296,7 +296,7 @@ hr {
     top: 1.5rem;
     left: 1.5rem;
     font-family: "Inter", sans-serif;
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 900;
     border-radius: 50px;
   }
@@ -312,10 +312,10 @@ hr {
 
   &__title {
     color: $dark-gray;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 900;
     @media screen and (max-width: 720px) {
-      font-size: 40px;
+      font-size: 2.5rem;
     }
   }
   &__description {
@@ -330,13 +330,13 @@ hr {
     top: 30%;
     right: 0;
     max-width: 592px;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 900;
     text-align: left;
     line-height: 1em;
     color: $light-gray;
     @media screen and (max-width: 720px) {
-      font-size: 30px;
+      font-size: 1.875rem;
       padding: 1rem;
       left: 2rem;
     }
@@ -347,25 +347,24 @@ hr {
   white-space: nowrap;
   padding: 10px 0;
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 
   ul {
     list-style: none;
-    margin-left: 0;
     display: inline-block;
     padding: 0;
     margin: 0;
-    list-style: none;
     animation: scroll-left 20s linear infinite;
 
     li {
       color: $dark-gray;
       font-family: "Inter", sans-serif;
-      font-size: 15px;
+      font-size: 0.938rem;
       font-weight: 900;
       margin-top: 1rem;
-
-      display: inline;
       margin-right: 1.5rem;
+      display: inline;
       font-size: 1rem;
       &:before {
         content: url("/assets/images/check.svg");
@@ -390,16 +389,16 @@ hr {
 .daily-benefits-section {
   color: $dark-gray;
   &__title {
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 900;
     max-width: 540px;
     line-height: 0.9em;
     @media screen and (max-width: 720px) {
-      font-size: 40px;
+      font-size: 2.5rem;
     }
   }
   &__description_title {
-    font-size: 23px;
+    font-size: 1.438rem;
     font-weight: 900;
     line-height: 0.9em;
     margin-top: 1.5rem;
@@ -413,7 +412,7 @@ hr {
   }
 
   &__description_text {
-    font-size: 15px;
+    font-size: 0.938rem;
     margin-top: 1rem;
   }
 }
@@ -434,16 +433,16 @@ hr {
     padding: 0.5rem;
   }
   &__title {
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 900;
     margin: 1rem 0;
     @media screen and (max-width: 720px) {
-      font-size: 40px;
+      font-size: 2.5rem;
     }
   }
   &__button {
     max-width: 393px;
-    font-size: 18px;
+    font-size: 1.125rem;
     padding: 1.24rem 2rem;
     @include border-rounded;
   }
@@ -461,10 +460,10 @@ hr {
 
   &__title {
     color: $dark-gray;
-    font-size: 50px;
+    font-size: 3.125rem;
     max-width: 693px;
     @media screen and (max-width: 720px) {
-      font-size: 40px;
+      font-size: 2.5rem;
     }
   }
   &__ingredient-list {
@@ -492,11 +491,11 @@ hr {
   &__ingredient_desc {
     font-weight: 400;
     color: $navy-blue;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   &__ingredient-small-text {
     color: #b7bbc9;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
   }
 }
@@ -515,13 +514,13 @@ hr {
     padding: 0.3rem;
   }
   &__title {
-    font-size: 80px;
+    font-size: 5rem;
     text-align: center;
     @media screen and (max-width: 1060px) {
-      font-size: 60px;
+      font-size: 3.75rem;
     }
     @media screen and (max-width: 720px) {
-      font-size: 40px;
+      font-size: 2.5rem;
     }
   }
   &__desc {
@@ -533,10 +532,10 @@ hr {
     margin-bottom: 3rem;
   }
   &__product-title {
-    font-size: 50px;
+    font-size: 3.125rem;
     line-height: 1em;
     @media screen and (max-width: 720px) {
-      font-size: 30px;
+      font-size: 1.875rem;
     }
   }
 }
@@ -544,12 +543,12 @@ hr {
 .whats-our-fan-say {
   padding: 88px 1px;
   &__title {
-    font-size: 50px;
+    font-size: 3.125rem;
     text-align: center;
     color: $dark-gray;
     margin-bottom: 4rem;
     @media screen and (max-width: 720px) {
-      font-size: 40px;
+      font-size: 2.5rem;
     }
   }
   &__fan-image {
@@ -589,12 +588,12 @@ hr {
   &__product-name {
     color: rgba(0, 38, 87, 1);
     font-family: "Inter", sans-serif;
-    font-size: 15px;
+    font-size: 0.938rem;
     font-weight: 600;
   }
   &__product-price {
     color: rgba(67, 76, 108, 1);
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
@@ -602,11 +601,9 @@ hr {
   color: $mint-white;
   background-color: get-color(base-secondary);
 
-  &__join-the-club {
-  }
   &__join-the-club-text {
     font-family: "Inter", sans-serif;
-    font-size: 21px;
+    font-size: 1.313rem;
     font-weight: 700;
   }
   &__menu {
@@ -621,10 +618,14 @@ hr {
     }
     li {
       margin-bottom: 0.5rem;
+      &:before {
+        content: "";
+        margin: 0;
+      }
     }
   }
   &__menu-title {
-    font-size: 21px;
+    font-size: 1.313rem;
     font-weight: 700;
     font-family: "Inter", sans-serif;
   }
@@ -634,7 +635,7 @@ hr {
     border: 2px solid #fff;
     border-radius: 17px;
     opacity: 0.3;
-    font-size: 10px;
+    font-size: 0.625rem;
     padding: 0.5rem;
     color: $light-gray;
   }
@@ -664,6 +665,6 @@ hr {
     position: absolute;
     right: 8px;
     top: 6px;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }

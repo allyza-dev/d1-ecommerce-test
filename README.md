@@ -39,16 +39,16 @@ project-root/
   cd d1-ecommerce-test
 ```
 
-2. Install dependencies (Foundation + Sass compiler)
-
-```bash
-  npm install
-```
-
-3. Checkout branch
+2. Checkout branch
 
 ```bash
   git checkout dev
+```
+
+3. Install dependencies (Foundation + Sass compiler)
+
+```bash
+  npm install
 ```
 
 4. Finally, run `npm start ` to run the project.
